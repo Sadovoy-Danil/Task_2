@@ -21,3 +21,19 @@
 > <br> &nbsp;&nbsp;&nbsp;&nbsp; } else {
 > <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i--;
 > <br> }
+
+3) Добовляем переменную **moneyPerDay**
+
+> appData.moneyPerDay = appData.budget / 30;
+
+4) Уровень достатка пользователя
+
+> if (appData.moneyPerDay < 100) {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; console.log('Низкий уровень достатка');
+> <br> } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; console.log('Средний уровень достатка');
+> <br> } else if (appData.moneyPerDay > 2000) {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; console.log('Высокий уровень достатка');
+> <br> } else {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; console.log('Произошла Ошибка');
+> <br> }
